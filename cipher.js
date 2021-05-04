@@ -10,9 +10,8 @@ const getKeyByValue = (obj, val) => {
 }
 
 const runCipher = (input, key) => {
-  input = input.toLowerCase()
   const cipherArr = [];
-  const lettersArr = input.split('');
+  const lettersArr = input.toLowerCase().split('');
   for (const char of lettersArr) {
     if (char === ' ') {
       cipherArr.push(char)
